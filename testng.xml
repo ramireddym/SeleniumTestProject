@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite  name="Gmail Selenium Tests suite" parallel="classes">
+ <listeners>
+   <listener class-name="com.keetech.seleniumtraining.tests.MyTestNgListener"></listener>
+ </listeners>
+  <test name="Smoke Tests">
+    <!-- <groups>
+     <define name="all">
+      	<include name="Regression"></include>
+        <include name="Smoke"></include>
+	<include name="Sanity"/>
+      </define> 
+      <run>
+        <include name="Smoke"></include>
+      </run>
+    </groups> -->
+    <classes>
+      <class name="com.keetech.seleniumtraining.tests.SigininTests">
+      </class>
+      <!-- <class name="com.keetech.seleniumtraining.tests.GmailInboxPageTests">
+      </class> -->
+    </classes>
+    </test>
+   <!--  <test name="Regression Tests">  
+      <groups>
+      <define name="all">
+      	<include name="Regression"></include>
+        <include name="Smoke"></include>
+      </define>
+      <run>
+        <include name="Regression"></include>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.keetech.seleniumtraining.tests.SigininTests">
+      </class>
+      <class name="com.keetech.seleniumtraining.tests.GmailInboxPageTests">
+      </class> 
+    </classes>
+    </test>-->
+</suite> <!-- Default suite -->
